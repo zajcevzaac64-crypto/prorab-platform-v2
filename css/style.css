@@ -4,12 +4,118 @@
 
 body {
     margin: 0;
-    background: lime !important;
-    color: black;
+    min-height: 100vh;
+    color: white;
     font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(5, 12, 22, 0.88),
+            rgba(5, 12, 22, 0.95)
+        ),
+        url("../images/construction-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+
+/* HEADER */
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+
 .logo {
-    font-size: 40px;
-    color: blue;
+    color: #ff9900;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.login {
+    background: transparent;
+    color: white;
+
+    border: 1px solid #ff9900;
+    border-radius: 25px;
+
+    padding: 10px 28px;
+}
+
+
+/* HERO */
+
+main {
+    max-width: 1100px;
+    margin-left: 350px;
+}
+
+
+h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-top: 60px;
+}
+
+
+p {
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+.primary {
+    background:#ff9900;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
+}
+
+
+.secondary {
+    background:#172337;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+}
+
+
+/* СМЕТА */
+
+.estimate {
+    margin-top:40px;
+}
+
+
+.estimate h2 {
+    font-size:32px;
+}
+
+
+/* ВОЗМОЖНОСТИ */
+
+.features {
+    margin-top:80px;
+}
+
+
+.card {
+    background:#111827;
+    padding:25px;
+    margin:20px 0;
+    border-radius:15px;
+    width:350px;
 }
