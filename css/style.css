@@ -1,1 +1,60 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(5,10,18,0.82),
+            rgba(5,10,18,0.9)
+        ),
+        url("../images/construction-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* чтобы контент был поверх фона */
+
+header,
+main {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* лёгкая сетка чертежа */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        40px 40px;
+
+    z-index: 0;
+}
