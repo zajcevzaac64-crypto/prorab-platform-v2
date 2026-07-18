@@ -168,3 +168,24 @@ p {
 .card p {
     font-size: 16px;
 }
+.hero {
+    padding-top: 20px;
+}
+
+
+h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+
+.features {
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+
+.estimate {
+    margin-top: 30px;
+}
