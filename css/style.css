@@ -1,11 +1,230 @@
-body {
-    margin:0;
-    background:red;
-    color:white;
-    font-size:40px;
+*{
+    box-sizing:border-box;
 }
 
 
-.logo {
-    color:orange;
+body{
+
+    margin:0;
+
+    font-family:Arial, sans-serif;
+
+    color:white;
+
+    background:#050b14;
+
+}
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(3,8,15,.85),
+        rgba(3,8,15,.95)
+    ),
+    url("../images/construction-bg.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    z-index:-1;
+
+}
+
+
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 50px;
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#ff9900;
+
+}
+
+
+
+.login{
+
+    background:none;
+
+    border:1px solid #ff9900;
+
+    color:white;
+
+    padding:10px 30px;
+
+    border-radius:25px;
+
+}
+
+
+
+.hero{
+
+    width:600px;
+
+    margin-left:350px;
+
+    padding-top:70px;
+
+}
+
+
+
+h1{
+
+    font-size:60px;
+
+    line-height:1.05;
+
+}
+
+
+
+.hero p{
+
+    color:#b8c1d1;
+
+    font-size:20px;
+
+}
+
+
+
+.buttons{
+
+    margin-top:40px;
+
+}
+
+
+
+button{
+
+    cursor:pointer;
+
+}
+
+
+.primary{
+
+    background:#ff9900;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+
+
+.secondary{
+
+    margin-left:15px;
+
+    background:#162438;
+
+    color:white;
+
+    border:1px solid #41546d;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+}
+
+
+
+.estimate{
+
+    margin-top:30px;
+
+}
+
+
+.estimate h2{
+
+    font-size:26px;
+
+}
+
+
+
+.features{
+
+    margin-left:350px;
+
+    margin-top:150px;
+
+}
+
+
+
+.features h2{
+
+    font-size:40px;
+
+}
+
+
+
+.cards{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    width:220px;
+
+    background:#101a29;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:1px solid #26364c;
+
+}
+
+
+
+.card h3{
+
+    color:#ff9900;
+
 }
