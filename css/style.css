@@ -133,3 +133,38 @@ p {
 
     box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
+/* КОНТЕЙНЕР КАРТОЧЕК */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 25px;
+}
+
+
+/* КАРТОЧКИ */
+
+.card {
+    background: rgba(17,24,39,0.85);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    width: 350px;
+    min-height: 170px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+}
+
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 22px;
+}
+
+
+.card p {
+    font-size: 16px;
+}
